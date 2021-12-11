@@ -62,7 +62,7 @@ mouse = {
     y:undefined
 }
 moveDir = "none";
-window.addEventListener("mousedown", function(e){
+window.addEventListener("touchstart", function(e){
     mouse.x = e.x;
     mouse.y = e.y;
     clicked1 = buttonDown.onclick(mouse.x, mouse.y);
@@ -70,7 +70,7 @@ window.addEventListener("mousedown", function(e){
     if (clicked1) moveDir = "down";
     else moveDir = "up";
 })
-window.addEventListener("mouseup", function(e){
+window.addEventListener("touchend", function(e){
     mouseClicked = false;
 })
 
